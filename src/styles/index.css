@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100svh;
+  background: url("./../assets/img/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#root {
+  height: 100%;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flex-center, .login-form, .Banner, .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between, .register-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.gradient {
+  display: none;
+  width: 100%;
+  height: 278.88px;
+  position: absolute;
+  background: linear-gradient(to bottom, #f3af4a 0%, #f46300 100%);
+  z-index: -1;
+  border-radius: 0 0 25px 25px;
+  top: 0;
+}
+
+.btn-primary {
+  background: #2f665f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn-primary:hover {
+  background: #1f4d45;
+}
+
+.fa-arrow-left {
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .gradient {
+    display: block;
+  }
+}
+.Banner {
+  height: 242.22px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px 0 0 0;
+}
+.Banner.inscription {
+  height: 30%;
+  padding: 0;
+  justify-content: flex-end;
+}
+.Banner.inscription img {
+  width: 80px;
+  height: 80px;
+}
+.Banner.inscription h1 {
+  font-size: 32px;
+}
+.Banner.inscription .fa-arrow-left {
+  color: black;
+}
+.Banner_link {
+  color: black;
+}
+.Banner .fa-arrow-left {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  left: 10px;
+}
+.Banner_img {
+  width: 100px;
+  height: 102px;
+}
+.Banner_title {
+  color: #f4801c;
+  font-size: 42px;
+  font-weight: normal;
+}
+.Banner_title.inscription {
+  color: black;
+}
+.Banner_description {
+  color: #333333;
+  font-style: italic;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .Banner {
+    padding: 20px 0 0 0;
+  }
+  .Banner.inscription {
+    height: 23%;
+  }
+  .Banner_title {
+    font-size: 20px;
+    color: white;
+  }
+  .Banner_description {
+    font-size: 16px;
+    color: #e6e6e6;
+  }
+}
+.login-form {
+  flex-direction: column;
+  justify-content: start;
+  gap: 25px;
+  width: 100%;
+  max-width: 320px;
+  padding: 100px 0 0 0;
+  flex-grow: 1;
+  min-height: calc(100lvh - 301px);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.input-group i {
+  margin-right: 10px;
+  color: black;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+.input-group input::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+}
+.input-group input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+.link {
+  color: #2f665f;
+}
+.link:hover {
+  text-decoration: none;
+}
+
+.forgot-password {
+  align-self: end;
+}
+
+@media screen and (max-width: 767px) {
+  .login-form {
+    padding: 18px 0 0 0;
+  }
+}
+footer {
+  background: #f3ab46;
+  padding: 20px 10px;
+  color: white;
+  width: 100%;
+}
+footer p {
+  font-style: italic;
+  text-align: center;
+}
+
+.register-form {
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 320px;
+  min-height: calc(100lvh - 301px);
+  flex-grow: 1;
+  scrollbar-width: none;
+}
+.register-form::-webkit-scrollbar {
+  display: none;
+}
+.register-form .input-group {
+  position: relative;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  z-index: 1020;
+  right: 10px;
+  font-size: 30px;
+  opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .register-form {
+    gap: 10px;
+    overflow-y: scroll;
+    padding: 15px 0;
+  }
+}
+.form-forgot-password {
+  max-width: 90%;
+  align-self: center;
+}
+.form-forgot-password h2 {
+  font-weight: normal;
+  font-size: 30px;
+}
+.form-forgot-password .input-group {
+  max-width: 320px;
+  margin: 0 auto;
+}
+.form-forgot-password .input-group input {
+  height: 50px;
+}
+.form-forgot-password .input-group input::-moz-placeholder {
+  color: gray;
+}
+.form-forgot-password .input-group input::placeholder {
+  color: gray;
+}
+
+@media all and (max-width: 767px) {
+  .form-forgot-password {
+    justify-content: center;
+  }
+  .form-forgot-password .fa-arrow-left {
+    color: white;
+  }
+  .form-forgot-password h2 {
+    font-size: 20px;
+  }
+  .form-forgot-password input {
+    height: 30px;
+  }
+}
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.otp-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.otp-inputs input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+}
+
+.otp-inputs input:focus {
+  border-color: #2f665f;
+}
+
+.resend-text {
+  font-size: 14px;
+}
+
+.resend-link {
+  color: #2f665f;
+  cursor: pointer;
+  text-decoration: underline;
+}/*# sourceMappingURL=index.css.map */

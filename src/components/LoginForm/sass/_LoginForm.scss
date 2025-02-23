@@ -1,0 +1,51 @@
+.login-form {
+  @extend .flex-center;
+  flex-direction: column;
+  justify-content: start;
+  gap: 25px;
+  width: 100%;
+  max-width: 320px;
+  padding: 100px 0 0 0;
+  flex-grow: 1;
+  min-height: calc(100lvh - 301px);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: $inputBorder;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.input-group i {
+  margin-right: 10px;
+  color: $text-color;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  &::placeholder {
+    color: $text-color;
+    font-weight: bold;
+  }
+}
+.link {
+  color: $button-primary-bg;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.forgot-password {
+  align-self: end;
+}
+
+@media screen and (max-width: 767px) {
+  .login-form {
+    padding: 18px 0 0 0;
+  }
+}

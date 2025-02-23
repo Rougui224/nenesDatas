@@ -1,0 +1,10 @@
+footer {
+  background: $footer-bg;
+  padding: 20px 10px;
+  color: $text-specific-color;
+  width: 100%;
+  p {
+    font-style: italic;
+    text-align: center;
+  }
+}

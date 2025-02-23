@@ -1,0 +1,34 @@
+.register-form {
+  @extend .flex-between;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 320px;
+  min-height: calc(100lvh - 301px);
+  flex-grow: 1;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .input-group {
+    position: relative;
+  }
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  z-index: 1020;
+  right: 10px;
+  font-size: 30px;
+  //   width: 0;
+  //   margin: 0;
+  opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .register-form {
+    gap: 10px;
+    overflow-y: scroll;
+    padding: 15px 0;
+  }
+}
