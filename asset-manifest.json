@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nenesDatas/static/css/main.9cf59ca5.css",
+    "main.js": "/nenesDatas/static/js/main.42f74e6a.js",
+    "static/media/LOGO.webp": "/nenesDatas/static/media/LOGO.e5be928d79cc8d972933.webp",
+    "static/media/bg.webp": "/nenesDatas/static/media/bg.e088055977047f5ebedd.webp",
+    "index.html": "/nenesDatas/index.html",
+    "main.9cf59ca5.css.map": "/nenesDatas/static/css/main.9cf59ca5.css.map",
+    "main.42f74e6a.js.map": "/nenesDatas/static/js/main.42f74e6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cf59ca5.css",
+    "static/js/main.42f74e6a.js"
+  ]
+}
