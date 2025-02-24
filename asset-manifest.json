@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nenesDatas/static/css/main.9cf59ca5.css",
+    "main.css": "/nenesDatas/static/css/main.15999739.css",
     "main.js": "/nenesDatas/static/js/main.fd837461.js",
     "static/media/LOGO.webp": "/nenesDatas/static/media/LOGO.e5be928d79cc8d972933.webp",
     "static/media/bg.webp": "/nenesDatas/static/media/bg.e088055977047f5ebedd.webp",
     "index.html": "/nenesDatas/index.html",
-    "main.9cf59ca5.css.map": "/nenesDatas/static/css/main.9cf59ca5.css.map",
+    "main.15999739.css.map": "/nenesDatas/static/css/main.15999739.css.map",
     "main.fd837461.js.map": "/nenesDatas/static/js/main.fd837461.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cf59ca5.css",
+    "static/css/main.15999739.css",
     "static/js/main.fd837461.js"
   ]
 }
