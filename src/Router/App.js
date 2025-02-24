@@ -7,7 +7,7 @@ import { CodeConfirm } from "../pages/CodeConfirm";
 
 export const App = () => {
   return (
-    <Router>
+    <Router basename="/nenesDatas">
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
