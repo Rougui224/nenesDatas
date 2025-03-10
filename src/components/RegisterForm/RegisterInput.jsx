@@ -15,6 +15,7 @@ export function RegisterInput({
       value={value}
       onChange={handleChange}
       required
+      data-placeholder={type === "date" && placeholder}
     />
   );
 }
